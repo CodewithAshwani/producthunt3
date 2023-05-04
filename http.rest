@@ -1,9 +1,20 @@
 
-GET http://localhost:3001/
+GET http://localhost:3002/api/products
 ###
 
-GET http://localhost:3001/api/products
+POST  http://localhost:3000/api/product
+Content-Type: application/json
 
+{
+      "name":"REEBOK 2",
+      "description":"SPORTS BRAND",
+      "icon": "https://www.reebok.in/",
+      "url":"https://www.reebok.in/category/nano-x3-9644?page=1&orderway=asc&orderby=popular",
+      "shortDesc":"GOOD PRODCTS",
+      "images":"https://www.reebok.in/",
+      "createdBy":"6452486c236e51382ccc9bac",
+      "updatedBy":"6452486c236e51382ccc9bac"
+}
 
 ###
 
@@ -12,12 +23,12 @@ GET http://localhost:3001/api/v1/notes
 
 ###
 
-POST http://localhost:3001/api/user
+POST http://localhost:3000/api/user
 content-type: application/json
 
 {
-    "name": "John",
-    # "email":"test1@gmail.com",
+    "name": "John1",
+    "email":"test1@gmail.com",
     "password": "123456"
 
 }
