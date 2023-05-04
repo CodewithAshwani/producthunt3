@@ -17,7 +17,6 @@ app.get("/api/products", (req, res) => {
   console.log("Hello from products");
   res.send("Hello Products GET");
 });
-
 app.use("/api/products", Product);
 //2. post products
 app.post("/api/product", async (req, res) => {
